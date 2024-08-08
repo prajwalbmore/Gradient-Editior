@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="pro.css">
+    <title>Pro-Gradient</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="gradient"></div>
+        <div class="result" id="res"></div>
+        <label for="gradient-type" class="select1">Select Gradient :-</label>
+        <select id="gradient-type">
+            <option value="lin">Linear</option>
+            <option value="rad">Radial</option>
+            <option value="con">Conic</option>
+            <option value="rlin">Repeating Linear</option>  
+        </select>
+        <label for="co1" class="item1">Color 1:-</label>
+        <input type="color" id="co1" value="#0000ff">
+
+        <label for="co2" class="item2">Color 2:-</label>
+        <input type="color" id="co2" value="#ff0000">
+
+        <input type="number" id="num1" value="0">
+        <br>
+        
+        <button onclick="generateGradient();" class="btn1">Generate Gradient</button>
+        <br>
+        
+    </div>
+    
+   
+
+
+    <script>
+        function generateGradient(){
+             var gradientType = document.getElementById(`gradient-type`).value;
+             var color1 = document.getElementById('co1').value;
+             var color2 = document.getElementById('co2').value;
+             var num = Number(document.getElementById('num1').value);
+             var result = document.getElementById('res');
+             var gradient = document.getElementById('gradient');
+            console.log(typeof(num));   
+            if(gradientType === 'lin'){
+                res.style.backgroundImage = `linear-gradient(${color1},${color2} ${num}px)`;
+            } else if(gradientType === 'rad'){
+                res.style.backgroundImage = `radial-gradient(${num}px,${color1},${color2})`;
+            } else if(gradientType === 'con'){
+                res.style.backgroundImage = `conic-gradient(from ${num}deg,${color1},${color2})`;
+            } else{
+                res.style.backgroundImage = `repeating-linear-gradient(${color1},${color2} ${num}px)`;
+            }
+        }
+        generateGradient();
+        
+        
+
+    </script>
+</body>
+
+</html>

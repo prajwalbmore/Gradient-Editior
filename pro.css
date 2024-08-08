@@ -1,0 +1,86 @@
+.result {
+    height: 500px;
+    width: 500px;
+    border: 5px solid black;
+    border-radius: 17.5px;
+    position: absolute; 
+    left: 17%;
+    top: 100px;
+}
+
+.container{
+    height: 700px;
+    width: 1500px;
+    background-color: rgb(202, 209, 209);
+}
+
+.lgard{
+    border: 1px solid black;
+    height: 700px;
+    width: 700px;
+    background-image: linear-gradient(red ,blue 200px,black 100px);
+}
+.div1{
+    
+    height: 500px;
+    width: 500px;
+}
+
+.select1{
+    font-size:x-large;
+    font-weight: bold;
+    position: absolute;
+    left: 57%;
+    top: 20%;
+}
+#gradient-type{
+    font-size:large;
+    font-weight: bold;
+    position: absolute;
+    left: 68%;
+    top: 20.5%;
+}
+
+
+.item1{
+    font-size:x-large;
+    font-weight: bold;
+    position: absolute;
+    left: 57%;
+    top: 30%;
+}
+#co1{
+    position: absolute;
+    left: 64%;
+    top: 30%;
+}
+
+.item2{
+    font-size:x-large;
+    font-weight: bold;
+    position: absolute;
+    left: 57%;
+    top: 35%;
+}
+#co2{
+    position: absolute;
+    left: 64%;
+    top: 35%;
+}
+
+#num1{
+    text-align: center;
+    font-size:large;
+    font-weight: bold;
+    position: absolute;
+    left: 57%;
+    top: 43%;
+}
+
+.btn1{
+    font-size:large;
+    font-weight: bold;
+    position: absolute;
+    left: 57%;
+    top: 50%;
+}
